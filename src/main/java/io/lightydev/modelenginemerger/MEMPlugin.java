@@ -3,6 +3,7 @@ package io.lightydev.modelenginemerger;
 import io.lightydev.modelenginemerger.commands.MEMCommand;
 import lombok.Getter;
 import lombok.SneakyThrows;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -37,6 +38,10 @@ public final class MEMPlugin extends JavaPlugin {
         this.getCommand("mem").setExecutor(new MEMCommand());
 
         Bukkit.getConsoleSender().sendMessage("§a[ModelEngineMerger] Successfully enabled plugin!");
+
+        // Metrics!
+        int pluginId = 17326;
+        new Metrics(this, pluginId);
 
     }
 
