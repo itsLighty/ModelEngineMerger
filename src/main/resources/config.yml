@@ -1,0 +1,3 @@
+paths:
+  from: "ModelEngine/resource pack" # ModelEngine's resource pack folder path
+  to: "ItemsAdder/contents/modelengine/resourcepack" # ItemsAdder's resource pack file

@@ -1,0 +1,14 @@
+name: ModelEngineMerger
+version: '${project.version}'
+main: io.lightydev.modelenginemerger.MEMPlugin
+api-version: 1.13
+depend: []
+authors: [ Lighty ]
+description: Easily merge ModelEngine resource pack to ItemsAdder packs with ease!
+commands:
+  mem:
+    description: ModelEngineMerger main command
+    aliases: [modelenginemerger]
+    permission: modelenginemerger.admin
+    permission-message: "&cYou don't have permission to use this command!"
+    tab-complete: []
